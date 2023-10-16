@@ -1,0 +1,4 @@
+- initialize project
+- shadcn/ui components
+    + button
+
