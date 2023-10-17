@@ -1,4 +1,13 @@
-- initialize project
 - shadcn/ui components
     + button
-
+    + dark mode
+    + dropdown menu
+- created
+    + landing page with layouts
+    + use-scroll-top hook
+- components
+    + footer
+    + heading
+    + heroes
+    + logo
+    + navbar
