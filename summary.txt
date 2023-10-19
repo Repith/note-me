@@ -1,13 +1,16 @@
-- shadcn/ui components
-    + button
-    + dark mode
-    + dropdown menu
-- created
-    + landing page with layouts
-    + use-scroll-top hook
-- components
-    + footer
-    + heading
-    + heroes
-    + logo
-    + navbar
+- created 
+    + main routes with layout that prevents unauthorized access
+    + navigation for documents
+    + documents page
+    + user-item sidebar component
+    + search and settings components
+    + document list + adding new notes as child (recursive component)
+
+- convex
+    + schema for documents
+    + documents create mutation
+
+- added
+    + usehooks-ts
+    + shadcn-ui (avatar | skeleton)
+    + sonner
