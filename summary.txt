@@ -1,16 +1,13 @@
 - created 
-    + main routes with layout that prevents unauthorized access
-    + navigation for documents
-    + documents page
-    + user-item sidebar component
-    + search and settings components
-    + document list + adding new notes as child (recursive component)
+    + trash box
+    + search command
+    + use-search hook
 
 - convex
-    + schema for documents
-    + documents create mutation
+    + recursive archive
+    + recursive restore
+    + search all notes
 
 - added
-    + usehooks-ts
-    + shadcn-ui (avatar | skeleton)
-    + sonner
+    + shadcn-ui (popover | input | alert-dialog | command)
+    + zustand for search component
