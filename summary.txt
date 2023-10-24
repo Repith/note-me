@@ -1,13 +1,11 @@
 - created 
-    + trash box
-    + search command
-    + use-search hook
+    + settings-modal | modal-provider
+    + navbar
+    + titlebar
 
 - convex
-    + recursive archive
-    + recursive restore
-    + search all notes
+    + getById
+    + update
 
 - added
-    + shadcn-ui (popover | input | alert-dialog | command)
-    + zustand for search component
+    + shadcn-ui (label)
