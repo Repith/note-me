@@ -1,11 +1,12 @@
 - created 
-    + settings-modal | modal-provider
-    + navbar
-    + titlebar
+    + alert button for notes in trash
+    + menu for each note
+    + toolbar (add icon | add cover)
+    + icon picker
 
 - convex
-    + getById
-    + update
+    + removeIcon API
 
 - added
-    + shadcn-ui (label)
+    + icon picker
+    + react-textarea-autosize
