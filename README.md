@@ -3,7 +3,7 @@
 
 
 
-NoteCraft is a sophisticated note-taking application designed to empower users in creating, customizing, and sharing their notes seamlessly. This versatile platform provides a special editor for crafting rich content, complete with lists, images, cover images, and icons. NoteCraft also offers robust storage, community publishing, and archiving capabilities for a comprehensive note management experience.
+NoteMe is a sophisticated note-taking application designed to empower users in creating, customizing, and sharing their notes seamlessly. This versatile platform provides a special editor for crafting rich content, complete with lists, images, cover images, and icons. NoteMe also offers robust storage, community publishing, and archiving capabilities for a comprehensive note management experience.
 
 
 ## Features
