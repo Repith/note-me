@@ -1,12 +1,14 @@
 - created 
-    + alert button for notes in trash
-    + menu for each note
-    + toolbar (add icon | add cover)
-    + icon picker
+    + use-cover-image hook
+    + cover-image-modal
+    + created edgestore API structure and lib
+    + single-image-dropzone
+    + Cover component
 
 - convex
-    + removeIcon API
+    + onCoverRemove
 
 - added
-    + icon picker
-    + react-textarea-autosize
+    + edgestore server + react
+    + zod
+    + react dropzone
