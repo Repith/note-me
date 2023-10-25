@@ -11,6 +11,7 @@ import { useCoverImage } from "@/hooks/use-cover-image";
 
 import { IconPicker } from "./icon-picker";
 import { Button } from "./ui/button";
+import { cn } from "@/lib/utils";
 
 interface ToolbarProps {
   initialData: Doc<"documents">;
@@ -76,15 +77,20 @@ export const Toolbar = ({
   return (
     <div className="pl-[54px] group relative">
       {!!initialData.icon && !preview && (
-        <div className="flex items-center gap-x-2 group/icon pt-6">
+        <div
+          className={cn(
+            "flex items-center gap-x-2 group/icon",
+            !!initialData.coverImage && "-mt-12"
+          )}
+        >
           <IconPicker onChange={onIconSelect}>
-            <p className="text-6xl hover:opacity-75 transition">
+            <p className="text-8xl py-1 hover:opacity-80 hover:bg-primary/5 transition">
               {initialData.icon}
             </p>
           </IconPicker>
           <Button
             onClick={onIconRemove}
-            className="rounded-full opacity-0 group-hover/icon:opacity-100 transition text-muted-foreground text-xs"
+            className="rounded-full opacity-0 group-hover/icon:opacity-100 transition text-muted-foreground text-xs "
             variant="outline"
             size="icon"
           >
@@ -95,11 +101,11 @@ export const Toolbar = ({
       {!!initialData.icon && preview && (
         <p className="text-6xl pt-6">{initialData.icon}</p>
       )}
-      <div className="opacity-0 group-hover:opacity-100 flex items-center gap-x-1 py-4">
+      <div className="opacity-0 group-hover:opacity-100 flex items-center gap-x-1 pt-4">
         {!initialData.icon && !preview && (
           <IconPicker asChild onChange={onIconSelect}>
             <Button
-              className="text-muted-foreground text-xs"
+              className="text-muted-foreground text-xs border-none"
               variant="outline"
               size="sm"
             >
@@ -111,7 +117,7 @@ export const Toolbar = ({
         {!initialData.coverImage && !preview && (
           <Button
             onClick={coverImage.onOpen}
-            className="text-muted-foreground text-xs"
+            className="text-muted-foreground text-xs border-none"
             variant="outline"
             size="sm"
           >

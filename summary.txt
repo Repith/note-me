@@ -1,14 +1,20 @@
 - created 
-    + use-cover-image hook
-    + cover-image-modal
-    + created edgestore API structure and lib
-    + single-image-dropzone
-    + Cover component
+    + error page
+    + publish option
+    + use-origin hook
+    + preview page similar for main note page
 
 - convex
-    + onCoverRemove
+    + recursive note deletion
 
 - added
-    + edgestore server + react
-    + zod
-    + react dropzone
+    + blocknote react | core for notes editor
+
+- changed
+    + proper redirect on main page note creation
+    + updated use-cover-image and fixed bugs
+
+(! Problems !)
+- Multi removal of notes and 404 Error when at child deleted page.
+("solved" by app error handling)
+- Deleting cover images when note is deleted.

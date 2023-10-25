@@ -226,8 +226,42 @@ export const remove = mutation({
       throw new Error("Unauthorized");
     }
 
+    const recursiveDelete = async (
+      documentId: Id<"documents">
+    ) => {
+      const children = await ctx.db
+        .query("documents")
+        .withIndex("by_user_parent", (q) =>
+          q
+            .eq("userId", userId)
+            .eq("parentDocument", documentId)
+        )
+        .collect();
+
+      for (const child of children) {
+        await ctx.db.delete(child._id);
+
+        await recursiveDelete(child._id);
+      }
+    };
+
+    const options: Partial<Doc<"documents">> = {
+      isArchived: false,
+    };
+
+    if (existingDocument.parentDocument) {
+      const parent = await ctx.db.get(
+        existingDocument.parentDocument
+      );
+      if (parent?.isArchived) {
+        options.parentDocument = undefined;
+      }
+    }
+
     const document = await ctx.db.delete(args.id);
 
+    recursiveDelete(args.id);
+    console.log("document", document);
     return document;
   },
 });
