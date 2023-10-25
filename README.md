@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# <img src="https://github.com/Repith/note-me/blob/main/public/logo-dark.ico" width=30px height=auto alt="Logo"> NoteMe
 
-First, run the development server:
+
+
+NoteCraft is a sophisticated note-taking application designed to empower users in creating, customizing, and sharing their notes seamlessly. This versatile platform provides a special editor for crafting rich content, complete with lists, images, cover images, and icons. NoteCraft also offers robust storage, community publishing, and archiving capabilities for a comprehensive note management experience.
+
+
+## Features
+
+- specialized editor allows users to craft notes with text, lists, images, cover images, and icons, providing a dynamic canvas for expressing ideas
+- publishing gives oportunity to share knowledge and insights with the wider community
+- store and organize every jot with ease
+
+
+## Tech Stack
+
+**Client:** React, Next.js, TailwindCSS, shadcn/ui
+
+**Server:** Convex
+
+**Other:** EdgeStore
+
+## Demo
+
+Try here: [https://note-me-nu.vercel.app](https://note-me-nu.vercel.app)
+
+
+## Installation
+
+First use your packet manager to install dependencies (f.e. npm)
+
+```bash 
+  npm install
+```
+Start your live Convex database with first terminal:
+
+```bash
+npx covex dev
+```
+
+Than start second terminal, and run server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and by default server should run on http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Configure your **.env** file with your own keys from Covex, Clerk and EdgeStore.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+# Deployment used by `npx convex dev`
+NEXT_PUBLIC_CONVEX_URL=
+CONVEX_DEPLOY_KEY=
 
-## Learn More
+# Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
-To learn more about Next.js, take a look at the following resources:
+# Edgestore
+EDGE_STORE_ACCESS_KEY=
+EDGE_STORE_SECRET_KEY=
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Don't let your ideas perish - note them down!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Screenshots
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Landing](https://github.com/Repith/Repith/blob/main/public/NoteMe/landing.png)
+![Note](https://github.com/Repith/Repith/blob/main/public/NoteMe/note.png)
+![Functionalities](https://github.com/Repith/Repith/blob/main/public/NoteMe/utilities.png)
+![Responsivness](https://github.com/Repith/Repith/blob/main/public/NoteMe/darkmode.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Credits
+
+Special thanks to [CodeWithAntonio](https://github.com/AntonioErdeljac) for this project :star: 
