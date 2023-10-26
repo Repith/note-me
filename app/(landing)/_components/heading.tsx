@@ -13,13 +13,14 @@ export const Heading = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
 
   return (
-    <div className="max-w-3xl space-y-4">
-      <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold">
-        Your ideas, Documents & Thoughts in one place. This
-        is <span className="underline">NoteMe</span>.
+    <div className="max-w-3xl space-y-4 flex flex-col items-center">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center md:text-left w-full">
+        Your ideas, <br /> Documents <br /> & Thoughts{" "}
+        <br /> in one place. <br /> This is{" "}
+        <span className="underline">NoteMe</span>.
       </h1>
-      <h3 className="text-base sm:text-xl md:text-2xl font-medium">
-        NoteMe is the connected workspace where <br />
+      <h3 className=" sm:text-xl md:text-2xl font-medium text-center md:text-left w-full">
+        NoteMe is the connected workspace <br /> where
         better, faster work happens.
       </h3>
       {isLoading && (
@@ -30,7 +31,7 @@ export const Heading = () => {
       {isAuthenticated && !isLoading && (
         <Button asChild>
           <Link href="/documents">
-            Enter Jotion
+            Enter NoteMe
             <ArrowRight className="h-4 w-4 ml-2" />
           </Link>
         </Button>
