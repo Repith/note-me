@@ -13,13 +13,13 @@ export const Heading = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
 
   return (
-    <div className="max-w-3xl space-y-4 flex flex-col items-center">
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center md:text-left w-full">
-        Your ideas, <br /> Documents <br /> & Thoughts{" "}
-        <br /> in one place. <br /> This is{" "}
-        <span className="underline">NoteMe</span>.
+    <div className=" max-w-3xl space-y-4 flex flex-col items-center">
+      <h1 className="text-4xl md:text-5xl  font-bold text-center  w-full ">
+        Your &#128161;Ideas, &#128209;Documents &
+        &#129504;Thoughts in one place. <br />
+        This is <span className="underline">NoteMe</span>.
       </h1>
-      <h3 className=" sm:text-xl md:text-2xl font-medium text-center md:text-left w-full">
+      <h3 className=" sm:text-xl md:text-2xl font-medium text-center  w-full ">
         NoteMe is the connected workspace <br /> where
         better, faster work happens.
       </h3>
